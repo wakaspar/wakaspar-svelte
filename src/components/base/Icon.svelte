@@ -4,17 +4,20 @@
     // before reaching production.  Also, I'll need to make sure that everything is fully responsive
     // and mobile-first.  This comment should go at the top of each <script> tag in every component.
     //
-    console.log('Header loaded');
+
+    // import AtomIcon from '../../static/icons/atom.svg';
+
+    console.log('Icon loaded');
 
     export let name = ''
 </script>
 
 <div>
-    <h1>{name}</h1>
+    <i>{name}</i>
 </div>
 
 <style>
-    h1 {
-        color: white;
+    i {
+        margin: none;
     }
 </style>

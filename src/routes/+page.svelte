@@ -1,18 +1,27 @@
 <script>
-    import Box from '../components/Box.svelte' ;
+    import DesktopDash from '../components/DesktopDash.svelte';
+    import MobileDash from '../components/MobileDash.svelte';
+
+    $: innerHeight = 0
+    $: innerWidth = 0
+    $: isMobile = outerWidth <= 760
+    $: outerHeight = 0
+    $: outerWidth = 0
 </script>
 
-<div>
-    <h1>Adam Kaspar</h1>
+<svelte:window bind:innerWidth bind:outerWidth bind:innerHeight bind:outerHeight />
 
-    <!-- TODO: Grid me! CSS Grid or Flexbox? -->
-    <Box name="one" />
-    <Box name="two" />
-    <Box name="three" />
+<div>
+    <h1 id="title">Adam Kaspar</h1>
+    {#if isMobile}
+        <MobileDash />
+    {:else}
+        <DesktopDash />
+    {/if}
 </div>
 
 <style>
-    h1 {
+    #title{
         text-align: center;
     }
 </style>
