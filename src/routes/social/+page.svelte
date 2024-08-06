@@ -8,6 +8,7 @@
         {label: 'Instagram', link: 'instagram.com/kasparthefriendlyghost', name: 'instagram'},
         {label: 'Facebook', link: 'facebook.com/wakaspar', name: 'facebook'}
     ]
+    // TODO: Pull gradient hover css from old website & apply to these?
 </script>
   
 <div>
@@ -30,5 +31,12 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         justify-content: center;
+    }
+
+    @media (max-width: 400px) {
+        .grid {
+            grid-template-columns: none;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+        }
     }
 </style>

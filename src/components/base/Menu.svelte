@@ -37,4 +37,10 @@
         background: #000;
         color: #fff;
     }
+    
+    @media (max-width: 450px) {
+        .menu a {
+            margin-right: unset;
+        }
+    }
 </style>
