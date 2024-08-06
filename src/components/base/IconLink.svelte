@@ -1,19 +1,21 @@
 <script>
-    export let link = '';
-    export let skill = '';
-    export let name = '';
+    export let skill = {
+        link: '',
+        name: '',
+        icon : '',
+    }
 
     function uppercaseSkill(str) {
         return str.charAt(0).toUpperCase() + str.slice(1);
     }
 
-    $: checkedName = name ? name : uppercaseSkill(skill)
+    $: checkedName = skill.name ? skill.name : uppercaseSkill(skill.icon)
 </script>
 
 <div>
-    <a class="icon-link" href="https://{link}/" target="_blank">
+    <a class="icon-link" href="https://{skill.link}/" target="_blank">
         <br>
-        <i class="devicon-{skill}-plain colored">
+        <i class="devicon-{skill.icon}-plain colored">
             <p>{checkedName}</p>
         </i>
     </a>

@@ -11,7 +11,7 @@
     <h2>Tech</h2>
     <div class="grid">
         {#each skills as skill}
-            <IconLink link={skill.link} skill={skill.skill} name={skill.name} />
+            <IconLink skill={skill} />
         {/each}
     </div>
 </div>
