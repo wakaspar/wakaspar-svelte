@@ -1,27 +1,40 @@
 <script>
-    import DesktopDash from '../components/DesktopDash.svelte';
-    import MobileDash from '../components/MobileDash.svelte';
-
-    $: innerHeight = 0
-    $: innerWidth = 0
-    $: isMobile = outerWidth <= 760
-    $: outerHeight = 0
-    $: outerWidth = 0
+    console.log('hello world');
 </script>
 
-<svelte:window bind:innerWidth bind:outerWidth bind:innerHeight bind:outerHeight />
-
-<div>
-    <h1 id="title">Adam Kaspar</h1>
-    {#if isMobile}
-        <MobileDash />
-    {:else}
-        <DesktopDash />
-    {/if}
+<div class="grid">
+    <div class="box">
+        <h1 class="typewriter name">Adam Kaspar</h1>
+        <a href="/about">enter =></a>
+    </div>
 </div>
 
 <style>
-    #title{
-        text-align: center;
+    .grid {
+        min-height: 98vh;
+        font-family: monospace;
+        border: 1px solid #000;
+        display: grid;
+        justify-content: center;
+    }
+
+    a {
+        color: #000 !important;
+    }
+
+    a:hover {
+        color: #fff !important;
+    }
+
+    .box {
+        height: fit-content;
+        grid-row-start: row1;
+        border: 1px solid #000;
+        padding: .5rem;
+    }
+
+    h1 {
+        color: #000;
+        letter-spacing: .15em;
     }
 </style>

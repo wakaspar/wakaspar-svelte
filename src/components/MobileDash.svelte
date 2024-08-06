@@ -9,27 +9,22 @@
 </script>
 
 <div class='mobile-dash'>
-    <div class='box-row'>
-        <Box name="skills">
-            <SkillsContent />
-        </Box>
-        <Box name="info">
-            <InfoContent />
-        </Box>
-        <Box name="experience">
-            <ExpContent />
-        </Box>
-    </div>
-
-    <div class='box-row'>
-        <Box name="social">
-            <SocialContent />
-        </Box>
-        <Box name="pics">
-            <PicsContent />
-        </Box>
-        <Box name="resume">
-            <ResumeContent />
-        </Box>
-    </div>
+    <Box name="skills">
+        <SkillsContent />
+    </Box>
+    <Box name="info">
+        <InfoContent />
+    </Box>
+    <Box name="experience">
+        <ExpContent />
+    </Box>
+    <Box name="social">
+        <SocialContent />
+    </Box>
+    <Box name="pics">
+        <PicsContent />
+    </Box>
+    <Box name="resume">
+        <ResumeContent />
+    </Box>
 </div>

@@ -6,10 +6,7 @@
 
     export let name;
     export let onClick;
-    export let classes;
-    let element;
-
-    // $: concatClasses = classes.toString
+    let element = undefined;
 
     let id = "10000000-1000-4000-8000-100000000000".replace(/[018]/g, c =>
         (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
@@ -22,7 +19,7 @@
 
 <!-- svelte-ignore a11y-no-static-element-interactions -->
 <!-- svelte-ignore a11y-click-events-have-key-events -->
-<div id={id} class=' box' on:mousedown={onClick} bind:this={element}>
+<div id={id} class='box' on:mousedown={onClick} bind:this={element}>
     <Header boxId={id} name={name} />
     <div class='content'>
         <slot />
