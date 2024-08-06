@@ -49,6 +49,6 @@
     
     .icon-link i {
         font-size: 3rem;
-        filter: drop-shadow(3px 2px 4px #7a7a7a);
+        filter: drop-shadow(2px 2px 2px #7a7a7a);
     }
 </style>

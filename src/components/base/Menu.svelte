@@ -1,8 +1,8 @@
 <script>
     const TABS = [
-        { name: 'About', url: '/about' },
+        { name: 'Tech', url: '/about' },
+        { name: 'Resumé', url: '/resume' },
         { name: 'Social', url: '/social' },
-        { name: 'Resume', url: '/resume' },
         { name: 'Toys', url: '/toys' },
     ]
 
@@ -17,24 +17,24 @@
 
 <style>
     .menu * {
-        border: 1px solid black;
+        border: 1px solid #000;
     }
 
     .menu {
         padding: 2px;
-        border: 1px solid black;
+        border: 1px solid #000;
         font-family: monospace;
         display: inline;
     }
     .menu a {
-        color: black;
+        color: #000;
         padding: 1px;
         text-decoration: none !important;
         margin-right: 2rem;
     }
 
     .menu a:hover {
-        background: black;
-        color: white;
+        background: #000;
+        color: #fff;
     }
 </style>

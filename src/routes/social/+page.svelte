@@ -1,23 +1,22 @@
 <script>
     import Menu from "../../components/base/Menu.svelte"
+    import SocialLink from "../../components/base/SocialLink.svelte"
+
+    let socials = [
+        {label: 'Github', link: 'github.com/wakaspar', name: 'github'},
+        {label: 'LinkedIn', link: 'linkedin.com/in/wakaspar', name: 'linkedin'},
+        {label: 'Instagram', link: 'instagram.com/kasparthefriendlyghost', name: 'instagram'},
+        {label: 'Facebook', link: 'facebook.com/wakaspar', name: 'facebook'}
+    ]
 </script>
   
 <div>
     <Menu />
-    <h2>Soc</h2>
+    <h2>Socials</h2>
     <div class="grid">
-        <a href="https://www.github.com/wakaspar" target="_blank">
-            <i class="bi bi-github" aria-hidden="true"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/wakaspar/" target="_blank">
-            <i class="bi bi-linkedin" aria-hidden="true"></i>
-        </a>
-        <a href="https://www.instagram.com/kasparthefriendlyghost/" target="_blank">
-            <i class="bi bi-instagram" aria-hidden="true"></i>
-        </a>
-        <a href="https://www.facebook.com/wakaspar" target="_blank">
-            <i class="bi bi-facebook" aria-hidden="true"></i>
-        </a>
+        {#each socials as s}
+            <SocialLink social={s} />
+        {/each}
     </div>
 </div>
 
@@ -31,10 +30,5 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         justify-content: center;
-    }
-
-    .grid a {
-        font-size: 5rem;
-        filter: drop-shadow(3px 2px 4px #7a7a7a);
     }
 </style>

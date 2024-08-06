@@ -1,5 +1,15 @@
-<script></script>
+<script>
+    import Menu from "../../components/base/Menu.svelte"
+</script>
 
-<div>Toys</div>
+<div>
+    <Menu />
+    <h2>Toys</h2>
+</div>
 
-<style></style>
+<style>
+    h2 {
+        font-family: monospace;
+        text-decoration: underline;
+    }
+</style>
