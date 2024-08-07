@@ -1,22 +1,51 @@
 <script>
+    // import { onMount } from 'svelte';
+    import SKILLS from '../../lib/skills';
+    
     export let entry = {
         dates: '',
         location: '',
         name: '',
         position: '',
-        tech: [{icon: '', name: ''}],
+        tech: ['', '', ''],
     }
+
+    $: tech = entry.tech ? getTechSkills(entry.tech) : null
+    // let tech = [];
+
+    function getTechSkills(arr) {
+        arr && arr.forEach(key => {
+            let skill = SKILLS.find((s) => s.icon == key)
+            let index = arr.indexOf(key)
+            arr[index] = skill
+        });
+        console.log('arr: ', arr)
+        return arr;
+    }
+
+    // TODO: works on page load but doesn't work when swapping 
+    // between pages; another TypeError throws...this sucks.
+
+    // onMount(() => {
+    //     if (entry.tech) {
+    //         tech = getTechSkills(entry.tech)
+    //     } else {
+    //         tech = null;
+    //     }
+    // });
+
+    console.log('tech: ', tech);
 </script>
 
 <div class="entry">
     <h3>{entry.name} - {entry.location}</h3>
     <p>{entry.position} | {entry.dates}</p>
 
-    {#if entry.tech}
+    {#if tech}
         <div class="tech">
-            {#each entry.tech as t}
+            <!-- {#each tech as t}
                 <i title={t.name} class="devicon-{t.icon}-plain colored"></i>
-            {/each}
+            {/each} -->
         </div>
     {/if}
     <br>

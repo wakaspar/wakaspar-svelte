@@ -4,19 +4,13 @@
         name: '',
         icon : '',
     }
-
-    function uppercaseSkill(str) {
-        return str.charAt(0).toUpperCase() + str.slice(1);
-    }
-
-    $: checkedName = skill.name ? skill.name : uppercaseSkill(skill.icon)
 </script>
 
 <div>
     <a class="icon-link" href="https://{skill.link}/" target="_blank">
         <br>
         <i class="devicon-{skill.icon}-plain colored">
-            <p>{checkedName}</p>
+            <p>{skill.name}</p>
         </i>
     </a>
 </div>

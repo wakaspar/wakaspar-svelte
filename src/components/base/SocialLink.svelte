@@ -18,6 +18,7 @@
     .soc-link {
         font-family: monospace;
         text-align: center;
+        padding-top: 1rem;
     }
 
     .soc-link a {
@@ -33,6 +34,10 @@
         color: #000;
         font-style: normal;
         font-size: 1rem;
+    }
+    
+    .soc-link:hover {
+        box-shadow: inset 0px 0px 0px 1px #000;
     }
 
     .soc-link:hover a i {
@@ -57,5 +62,11 @@
 
     .bi-facebook {
         color: #0866FF;
+    }
+
+    @media (max-width: 500px) {
+        .soc-link {
+            padding: 1rem 2rem 0rem 2rem;
+        }
     }
 </style>
