@@ -27,4 +27,10 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
         justify-content: center;
     }
+
+    @media (max-width: 500px) {
+        .grid {
+            grid-template-columns: 1fr 1fr;
+        } 
+    }
 </style>

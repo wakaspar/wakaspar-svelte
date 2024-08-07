@@ -1,6 +1,7 @@
 <script>
     import DesktopDash from '../../components/DesktopDash.svelte';
     import MobileDash from '../../components/MobileDash.svelte';
+    import Menu from '../../components/base/Menu.svelte';
 
     $: innerHeight = 0
     $: innerWidth = 0
@@ -12,7 +13,8 @@
 <svelte:window bind:innerWidth bind:outerWidth bind:innerHeight bind:outerHeight />
 
 <div>
-    <h1 id="title">Adam Kaspar</h1>
+    <Menu />
+    <h2>Sandbox</h2>
     {#if isMobile}
         <MobileDash />
     {:else}
@@ -21,7 +23,8 @@
 </div>
 
 <style>
-    #title{
-        text-align: center;
+    h2 {
+        font-family: monospace;
+        text-decoration: underline;
     }
 </style>
