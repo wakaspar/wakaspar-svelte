@@ -8,12 +8,11 @@
         {label: 'Instagram', link: 'instagram.com/kasparthefriendlyghost', name: 'instagram'},
         {label: 'Facebook', link: 'facebook.com/wakaspar', name: 'facebook'}
     ]
-    // TODO: Pull gradient hover css from old website & apply to these?
 </script>
   
 <div>
     <Menu />
-    <h2>Socials</h2>
+    <h2>Social</h2>
     <div class="grid">
         {#each socials as s}
             <SocialLink social={s} />

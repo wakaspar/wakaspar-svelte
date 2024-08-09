@@ -5,7 +5,7 @@
 <div class="grid">
     <div class="box">
         <h1 class="typewriter name">Adam Kaspar</h1>
-        <a href="/about">enter =></a>
+        <a href="/about">welcome =></a>
     </div>
 </div>
 
