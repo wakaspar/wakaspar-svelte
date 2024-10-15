@@ -4,8 +4,8 @@
 
 <div>
     <!-- <Icon name='JavaScript' /> -->
-    <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
-    <!-- <img alt="aws" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" /> -->
+    <i class='devicon-amazonwebservices-plain-wordmark colored'></i>
+    <!-- <img alt='aws' src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg' /> -->
     JavaScript
     Typescript
     Ruby
