@@ -1,6 +1,6 @@
 <script>
-    import Entry from "../../components/base/Entry.svelte"
-    import ENTRIES from "../../lib/ENTRIES.js";
+    import Entry from '../../components/base/Entry.svelte'
+    import ENTRIES from '$lib/ENTRIES.js';
 
     let entries = ENTRIES;
 </script>

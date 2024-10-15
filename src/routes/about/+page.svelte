@@ -1,6 +1,6 @@
 <script>
     import IconLink from '../../components/base/IconLink.svelte';
-    import SKILLS from '../../lib/skills.js';
+    import SKILLS from '$lib/skills.js';
 
     let skills = SKILLS;
 </script>

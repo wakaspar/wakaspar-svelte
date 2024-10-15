@@ -1,14 +1,14 @@
 
 <script>
     import Header from './Header.svelte' ;
-    import { draggable } from '../../lib/draggable.js'
+    import { draggable } from '$lib/draggable.js'
     import { onMount } from 'svelte';
 
     export let name;
     export let onClick;
     let element = undefined;
 
-    let id = "10000000-1000-4000-8000-100000000000".replace(/[018]/g, c =>
+    let id = '10000000-1000-4000-8000-100000000000'.replace(/[018]/g, c =>
         (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
     )
 

@@ -9,22 +9,22 @@
 </script>
 
 <div class='mobile-dash'>
-    <Box name="skills">
+    <Box name='skills'>
         <SkillsContent />
     </Box>
-    <Box name="info">
+    <Box name='info'>
         <InfoContent />
     </Box>
-    <Box name="experience">
+    <Box name='experience'>
         <ExpContent />
     </Box>
-    <Box name="social">
+    <Box name='social'>
         <SocialContent />
     </Box>
-    <Box name="pics">
+    <Box name='pics'>
         <PicsContent />
     </Box>
-    <Box name="resume">
+    <Box name='resume'>
         <ResumeContent />
     </Box>
 </div>

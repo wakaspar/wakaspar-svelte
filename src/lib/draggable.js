@@ -6,7 +6,7 @@ export function draggable(id) {
         var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
 
         // if present, move div from header. otherwise, move div from anywhere inside.
-        var headerId = document.getElementById(elmnt.id + "-header")
+        var headerId = document.getElementById(elmnt.id + '-header')
         headerId ? headerId.onmousedown = dragMouseDown : elmnt.onmousedown = dragMouseDown;
 
         function dragMouseDown(e) {
@@ -29,8 +29,8 @@ export function draggable(id) {
             pos3 = e.clientX;
             pos4 = e.clientY;
             // set the element's new position:
-            elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-            elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+            elmnt.style.top = (elmnt.offsetTop - pos2) + 'px';
+            elmnt.style.left = (elmnt.offsetLeft - pos1) + 'px';
         }
 
         function closeDragElement() {

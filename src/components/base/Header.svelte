@@ -10,7 +10,7 @@
 </script>
 
 <div id={headerId}>
-    <h1 class="{concatClasses}">{name}</h1>
+    <h1 class='{concatClasses}'>{name}</h1>
 </div>
 
 <style>
