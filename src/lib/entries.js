@@ -64,6 +64,7 @@ const ENTRIES = [
         position: 'Implementation Support Engineer',
         tech: [ 
             { icon: 'nodejs', name: 'NodeJS', link: 'nodejs.org/en' },
+            { icon: 'rails', name: 'Ruby on Rails', link: 'rubyonrails.org' },
             { icon: 'postgresql', name: 'PostgreSQL', link: 'postgresql.org' },
             { icon: 'jira', name: 'Jira', link: 'atlassian.com/software/jira' }
         ],
