@@ -6,7 +6,7 @@
     }
 </script>
 
-<div>
+<div title={skill.name}>
     <a class="icon-link" href="https://{skill.link}/" target="_blank">
         <br>
         <i class="devicon-{skill.icon}-plain colored">
