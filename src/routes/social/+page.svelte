@@ -3,10 +3,10 @@
     import SocialLink from "../../components/base/SocialLink.svelte"
 
     let socials = [
-        {label: 'Github', link: 'github.com/wakaspar', name: 'github'},
-        {label: 'LinkedIn', link: 'linkedin.com/in/wakaspar', name: 'linkedin'},
-        {label: 'Instagram', link: 'instagram.com/kasparthefriendlyghost', name: 'instagram'},
-        {label: 'Facebook', link: 'facebook.com/wakaspar', name: 'facebook'}
+        {name: 'Github', link: 'github.com/wakaspar', icon: 'github'},
+        {name: 'LinkedIn', link: 'linkedin.com/in/wakaspar', icon: 'linkedin'},
+        {name: 'Instagram', link: 'instagram.com/kasparthefriendlyghost', icon: 'instagram'},
+        {name: 'Facebook', link: 'facebook.com/wakaspar', icon: 'facebook'}
     ]
 </script>
   

@@ -1,15 +1,15 @@
 <script>
     export let social = {
-        label: '',
-        link: '',
         name: '',
+        link: '',
+        icon: '',
     }
 </script>
 
-<div title={social.label} class="soc-link">
+<div title={social.name} class="soc-link">
     <a href="https://www.{social.link}/" target="_blank">
-        <i class="bi bi-{social.name}" aria-hidden="true">
-            <p>{social.label}</p>
+        <i class="bi bi-{social.icon}" aria-hidden="true">
+            <p>{social.name}</p>
         </i>
     </a>
 </div>
