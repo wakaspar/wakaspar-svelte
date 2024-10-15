@@ -6,9 +6,9 @@
     }
 </script>
 
-<div title={social.name} class="soc-link">
-    <a href="https://www.{social.link}/" target="_blank">
-        <i class="bi bi-{social.icon}" aria-hidden="true">
+<div title={social.name} class='soc-link'>
+    <a href='https://www.{social.link}/' target='_blank'>
+        <i class='bi bi-{social.icon}' aria-hidden='true'>
             <p>{social.name}</p>
         </i>
     </a>
@@ -16,7 +16,6 @@
 
 <style>
     .soc-link {
-        font-family: monospace;
         text-align: center;
         padding-top: 1rem;
     }

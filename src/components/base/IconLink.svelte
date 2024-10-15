@@ -7,9 +7,9 @@
 </script>
 
 <div title={skill.name}>
-    <a class="icon-link" href="https://{skill.link}/" target="_blank">
+    <a class='icon-link' href='https://{skill.link}/' target='_blank'>
         <br>
-        <i class="devicon-{skill.icon}-plain colored">
+        <i class='devicon-{skill.icon}-plain colored'>
             <p>{skill.name}</p>
         </i>
     </a>
@@ -24,7 +24,6 @@
     }
     
     .icon-link i p {
-        font-family: monospace;
         font-size: 1rem;
         color: #000;
     }

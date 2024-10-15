@@ -1,5 +1,9 @@
 <script>
     import '../app.css'
+    import Menu from '../components/base/Menu.svelte'
 </script>
-  
-<slot />
+
+<div>
+    <Menu />
+    <slot />
+</div>

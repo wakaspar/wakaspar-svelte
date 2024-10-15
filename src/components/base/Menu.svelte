@@ -9,10 +9,10 @@
 
 </script>
 
-<p class="menu">
-    <a class="name" href="/">Adam Kaspar => </a>
+<p class='menu'>
+    <a class='name' href='/'>Adam Kaspar => </a>
     {#each TABS as tab}
-        <a class="page" href='{tab.url}'>{tab.name}</a>
+        <a class='page' href='{tab.url}'>{tab.name}</a>
     {/each}
 </p>
 
@@ -24,7 +24,6 @@
     .menu {
         padding: 2px 1px 2px 2px;
         border: 1px solid #000;
-        font-family: monospace;
         display: inline;
     }
 

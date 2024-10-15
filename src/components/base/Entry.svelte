@@ -8,15 +8,15 @@
     }
 </script>
 
-<div class="entry">
+<div class='entry'>
     <h3>{entry.name} - {entry.location}</h3>
     <p>{entry.position} | {entry.dates}</p>
 
     {#if entry.tech}
-        <div class="tech">
+        <div class='tech'>
             {#each entry.tech as t}
-                <a class="link" href="https://{t.link}" target="_blank">
-                    <i title={t.name} class="devicon-{t.icon}-plain colored"></i>
+                <a class='link' href='https://{t.link}' target='_blank'>
+                    <i title={t.name} class='devicon-{t.icon}-plain colored'></i>
                 </a>
             {/each}
         </div>
@@ -25,7 +25,6 @@
 
 <style>
     .entry {
-        font-family: monospace;
         border-bottom: 1px solid #000;
         padding-bottom: 1rem;
     }

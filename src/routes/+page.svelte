@@ -2,17 +2,16 @@
     console.log('hello world');
 </script>
 
-<div class="grid">
-    <div class="box">
-        <h1 class="typewriter name">Adam Kaspar</h1>
-        <a href="/about">welcome =></a>
+<div class='grid'>
+    <div class='box'>
+        <h1 class='typewriter name'>Adam Kaspar</h1>
+        <a href='/about'>welcome =></a>
     </div>
 </div>
 
 <style>
     .grid {
         min-height: 98vh;
-        font-family: monospace;
         border: 1px solid #000;
         display: grid;
         justify-content: center;

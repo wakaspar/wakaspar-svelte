@@ -1,6 +1,5 @@
 <script>
-    import Menu from "../../components/base/Menu.svelte"
-    import SocialLink from "../../components/base/SocialLink.svelte"
+    import SocialLink from '../../components/base/SocialLink.svelte'
 
     let socials = [
         {name: 'Github', link: 'github.com/wakaspar', icon: 'github'},
@@ -11,9 +10,8 @@
 </script>
   
 <div>
-    <Menu />
     <h2>Social</h2>
-    <div class="grid">
+    <div class='grid'>
         {#each socials as s}
             <SocialLink social={s} />
         {/each}
@@ -21,11 +19,6 @@
 </div>
 
 <style>
-    h2 {
-        font-family: monospace;
-        text-decoration: underline;
-    }
-
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
