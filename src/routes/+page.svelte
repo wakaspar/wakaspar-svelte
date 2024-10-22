@@ -11,7 +11,8 @@
 
 <style>
     .grid {
-        min-height: 98vh;
+        margin-top: .25rem;
+        height: 96vh;
         border: 1px solid #000;
         display: grid;
         justify-content: center;
