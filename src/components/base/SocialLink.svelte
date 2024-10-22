@@ -6,13 +6,11 @@
     }
 </script>
 
-<div title={social.name} class='soc-link'>
-    <a href='https://www.{social.link}/' target='_blank'>
-        <i class='bi bi-{social.icon}' aria-hidden='true'>
-            <p>{social.name}</p>
-        </i>
-    </a>
-</div>
+<a href='https://www.{social.link}/' target='_blank' title={social.name} class='soc-link'>
+    <i class='bi bi-{social.icon}' aria-hidden='true'>
+        <p>{social.name}</p>
+    </i>
+</a>
 
 <style>
     .soc-link {
@@ -20,16 +18,16 @@
         padding-top: 1rem;
     }
 
-    .soc-link a {
+    .soc-link {
         text-decoration: none;
     }
 
-    .soc-link a i {
+    .soc-link i {
         font-size: 5rem;
         filter: drop-shadow(3px 2px 4px #7a7a7a);
     }
 
-    .soc-link a i p {
+    .soc-link i p {
         color: #000;
         font-style: normal;
         font-size: 1rem;
@@ -39,11 +37,11 @@
         box-shadow: inset 0px 0px 0px 1px #000;
     }
 
-    .soc-link:hover a i {
+    .soc-link:hover i {
         color: #000;
     }
 
-    .soc-link:hover a i p {
+    .soc-link:hover i p {
         color: #fff;
     }
 
