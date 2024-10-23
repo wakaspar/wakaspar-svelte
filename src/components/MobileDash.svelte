@@ -5,17 +5,16 @@
     import PicsContent from './content/PicsContent.svelte';
     import SkillsContent from './content/SkillsContent.svelte';
     import SocialContent from './content/SocialContent.svelte';
-    import ResumeContent from './content/ResumeContent.svelte';
 </script>
 
 <div class='mobile-dash'>
-    <Box name='skills'>
+    <Box name='tech'>
         <SkillsContent />
     </Box>
-    <Box name='info'>
+    <Box name='about'>
         <InfoContent />
     </Box>
-    <Box name='experience'>
+    <Box name='resume'>
         <ExpContent />
     </Box>
     <Box name='social'>
@@ -24,7 +23,10 @@
     <Box name='pics'>
         <PicsContent />
     </Box>
-    <Box name='resume'>
-        <ResumeContent />
-    </Box>
 </div>
+
+
+<style>
+    .mobile-dash {
+    }
+</style>

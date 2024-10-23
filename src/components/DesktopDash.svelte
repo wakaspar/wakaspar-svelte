@@ -3,7 +3,6 @@
     import ExpContent from './content/ExpContent.svelte'
     import InfoContent from './content/InfoContent.svelte'
     import PicsContent from './content/PicsContent.svelte'
-    import ResumeContent from './content/ResumeContent.svelte'
     import SkillsContent from './content/SkillsContent.svelte'
     import SocialContent from './content/SocialContent.svelte'
 
@@ -22,22 +21,19 @@
 
 <div class='mobile-dash'>
     <!-- TODO: Randomize positions! <-- set top and left, will have to do each directly. -->
-    <DragBox onClick={bringToFront} name='skills'>
+    <DragBox onClick={bringToFront} name='tech' positionX=260 positionY=70>
         <SkillsContent />
     </DragBox>
-    <DragBox onClick={bringToFront} name='info'>
+    <DragBox onClick={bringToFront} name='about' positionX=10 positionY=70>
         <InfoContent />
     </DragBox>
-    <DragBox onClick={bringToFront} name='experience'>
+    <DragBox onClick={bringToFront} name='resume' positionX=10 positionY=270>
         <ExpContent />
     </DragBox>
-    <DragBox onClick={bringToFront} name='social'>
+    <DragBox onClick={bringToFront} name='social' positionX=260 positionY=270>
         <SocialContent />
     </DragBox>
-    <DragBox onClick={bringToFront} name='pics'>
+    <DragBox onClick={bringToFront} name='pics' positionX=10 positionY=380>
         <PicsContent />
-    </DragBox>
-    <DragBox onClick={bringToFront} name='resume'>
-        <ResumeContent />
     </DragBox>
 </div>

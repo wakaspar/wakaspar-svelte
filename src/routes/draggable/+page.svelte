@@ -4,7 +4,7 @@
 
     $: innerHeight = 0
     $: innerWidth = 0
-    $: isMobile = outerWidth <= 760
+    $: isMobile = outerWidth <= 800
     $: outerHeight = 0
     $: outerWidth = 0
 </script>
