@@ -18,11 +18,12 @@
 
 <style>
     .box {
-        padding: .25rem;
+        border: 1px solid #000;
+        margin: .5rem 0;
     }
+
     .content {
-        background: white;
+        background: rgba(0, 0, 0, 0.25); /* black, 1/4 opacity */
         text-align: center;
-        border: 1px solid white;
     }
 </style>
