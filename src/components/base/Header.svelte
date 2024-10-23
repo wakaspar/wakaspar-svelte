@@ -15,12 +15,13 @@
 
 <style>
     h1 {
-        color: white;
-        border: 1px solid skyblue;
+        color: #000;
+        text-decoration: underline;
         text-align: center;
-        background: blue;
         margin: 0;
         cursor: move;
+        border-bottom: 1px solid #000;
+        background: rgba(0, 0, 0, 0.25); /* black, 1/4 opacity */
     }
 
     .mobile {
