@@ -1,5 +1,4 @@
 <script>
-    import Icon from '../base/Icon.svelte'
     import SKILLS from '$lib/skills.js';
 
     let skills = SKILLS;
