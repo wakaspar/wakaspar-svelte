@@ -1,12 +1,8 @@
 <script>
     import SocialLink from '../../components/base/SocialLink.svelte'
+    import SOCIALS from '$lib/socials.js';
 
-    let socials = [
-        {name: 'Github', link: 'github.com/wakaspar', icon: 'github'},
-        {name: 'LinkedIn', link: 'linkedin.com/in/wakaspar', icon: 'linkedin'},
-        {name: 'Instagram', link: 'instagram.com/kasparthefriendlyghost', icon: 'instagram'},
-        {name: 'Facebook', link: 'facebook.com/wakaspar', icon: 'facebook'}
-    ]
+    let socials = SOCIALS;
 </script>
   
 <div>
