@@ -21,19 +21,19 @@
 
 <div class='mobile-dash'>
     <!-- TODO: Randomize positions! <-- set top and left, will have to do each directly. -->
-    <DragBox onClick={bringToFront} name='tech' positionX=260 positionY=70>
+    <DragBox onClick={bringToFront} name='Tech' positionX=260 positionY=70>
         <SkillsContent />
     </DragBox>
-    <DragBox onClick={bringToFront} name='about' positionX=10 positionY=70>
+    <DragBox onClick={bringToFront} name='About' positionX=10 positionY=70>
         <InfoContent />
     </DragBox>
-    <DragBox onClick={bringToFront} name='resume' positionX=10 positionY=270>
+    <DragBox onClick={bringToFront} name='Resumé' positionX=10 positionY=270>
         <ResumeContent />
     </DragBox>
-    <DragBox onClick={bringToFront} name='social' positionX=260 positionY=270>
+    <DragBox onClick={bringToFront} name='Social' positionX=260 positionY=290>
         <SocialContent />
     </DragBox>
-    <DragBox onClick={bringToFront} name='pics' positionX=10 positionY=380>
+    <DragBox onClick={bringToFront} name='Pics' positionX=260 positionY=400>
         <PicsContent />
     </DragBox>
 </div>

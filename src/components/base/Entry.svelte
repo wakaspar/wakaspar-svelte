@@ -39,7 +39,7 @@
     }
 
     .entry .tech i:hover {
-        color: #000;
+        color: #fff;
     }
 
     .entry .tech i::after {

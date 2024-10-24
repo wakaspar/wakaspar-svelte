@@ -1,16 +1,15 @@
 <script>
     const TABS = [
-        { name: 'Tech', url: '/about' },
+        { name: 'Tech', url: '/tech' },
         { name: 'Resumé', url: '/resume' },
         { name: 'Social', url: '/social' },
-        { name: 'Toys', url: '/toys' },
-        { name: 'D&D', url: '/draggable' },
+        // { name: 'Toys', url: '/toys' },
     ]
 
 </script>
 
 <p class='menu'>
-    <a class='name' href='/'>Adam Kaspar => </a>
+    <a class='name' href='/home'>Adam Kaspar => </a>
     {#each TABS as tab}
         <a class='page' href='{tab.url}'>{tab.name}</a>
     {/each}
@@ -38,8 +37,14 @@
     }
 
     .menu .page:hover {
-        background: #000;
+        border: 1px solid #fff;
         color: #fff;
+    }
+
+    .menu .page:active {
+        color: #000;
+        background: #fff;
+        border: 1px solid #000;
     }
 
     .name {
@@ -48,12 +53,13 @@
     }
 
     .name:hover {
+        color: #fff !important;
         background: none !important;
         text-decoration: underline !important;
     }
 
-    .name:hover, .name:visited  {
-        color: #000 !important;
+    .name:visited {
+        color: #000;
     }
 
     @media (min-width: 600px) {

@@ -4,13 +4,17 @@
     let socials = SOCIALS;
 </script>
 
-<div class='grid'>
-    {#each socials as social}
-        <a href='https://www.{social.link}/' target='_blank' title={social.name} class='soc-link'>
-            <i class='bi bi-{social.icon}' aria-hidden='true' />
-        </a>
-    {/each}
-
+<div class='wrapper'>
+    <div class='grid'>
+        {#each socials as social}
+            <a href='https://www.{social.link}/' target='_blank' title={social.name} class='soc-link'>
+                <i class='bi bi-{social.icon}' aria-hidden='true' />
+            </a>
+        {/each}
+    
+    </div>
+    
+    <a class='about-link' href='/tech'>Learn more =></a>
 </div>
 
 <style>

@@ -14,7 +14,7 @@
     <Box name='about'>
         <InfoContent />
     </Box>
-    <Box name='resume'>
+    <Box name='resumé'>
         <ResumeContent />
     </Box>
     <Box name='social'>
@@ -24,9 +24,3 @@
         <PicsContent />
     </Box>
 </div>
-
-
-<style>
-    .mobile-dash {
-    }
-</style>

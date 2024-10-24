@@ -1,17 +1,45 @@
-<table>
-    <tr>
-        <th>name</th>
-        <th>date</th>
-        <th>position</th>
-    </tr>
-    <tr>
-        <td>one</td>
-        <td>two</td>
-        <td>three</td>
-    </tr>
-    <tr>
-        <td>four</td>
-        <td>five</td>
-        <td>six</td>
-    </tr>
+<script>
+    import ENTRIES from '$lib/entries.js';
+
+    let entries = ENTRIES;
+</script>
+
+<table class='resume'>
+    {#each entries as entry}
+        <div class='entry'>
+            <tr>{entry.name}</tr>
+            <tr>{entry.position}</tr>
+            <tr>{entry.dates}</tr>
+    
+            {#if entry.tech}
+                <tr class='tech'>
+                    {#each entry.tech as tech}
+                        <i title={tech.name} class='devicon-{tech.icon}-plain colored' />
+                    {/each}
+                </tr>
+            {/if}
+        </div>
+    {/each}
+    
+    <a class='about-link' href='/resume'>Learn more =></a>
 </table>
+
+<style>
+    .resume .entry:not(:nth-last-child(2)) {
+        border-bottom: 1px solid #000;
+    }
+
+    .resume .entry tr {
+        line-height: 10px;
+        text-align: justify;
+    }
+
+    .resume .entry tr:hover, 
+    .resume .entry .tech i:hover {
+        color: #fff;
+    }
+
+    .resume .entry .tech {
+        text-align: justify;
+    }
+</style>

@@ -29,11 +29,11 @@
     }
 
     .icon-link:hover {
-        box-shadow: inset 0px 0px 0px 1px #000;
+        box-shadow: inset 0px 0px 0px 1px #fff;
     }
 
     .icon-link:hover i {
-        color: #000;
+        color: #fff;
     }
 
     .icon-link:hover i p {
