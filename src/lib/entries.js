@@ -63,6 +63,7 @@ const ENTRIES = [
         name: 'Castlight Health',
         position: 'Implementation Support Engineer',
         tech: [ 
+            { icon: 'javascript', name: 'JavaScript', link: 'javascript.com' },
             { icon: 'nodejs', name: 'NodeJS', link: 'nodejs.org/en' },
             { icon: 'rails', name: 'Ruby on Rails', link: 'rubyonrails.org' },
             { icon: 'postgresql', name: 'PostgreSQL', link: 'postgresql.org' },
