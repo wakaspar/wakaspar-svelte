@@ -1,5 +1,5 @@
 <script>
-    import SocialLink from '../../components/base/SocialLink.svelte'
+    import SocialLink from '../../../components/base/SocialLink.svelte'
     import SOCIALS from '$lib/socials.js';
 
     let socials = SOCIALS;
@@ -7,6 +7,7 @@
   
 <div>
     <h2>Social</h2>
+    <p>Not really my jam, but what I do have is here:</p>
     <div class='grid'>
         {#each socials as s}
             <SocialLink social={s} />

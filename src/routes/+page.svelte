@@ -5,14 +5,14 @@
 <div class='grid'>
     <div class='box'>
         <h1 class='typewriter name'>Adam Kaspar</h1>
-        <a href='/about'>welcome =></a>
+        <a href='/home'>Click to enter =></a>
     </div>
 </div>
 
 <style>
     .grid {
         margin-top: .25rem;
-        height: 96vh;
+        height: 98vh;
         border: 1px solid #000;
         display: grid;
         justify-content: center;

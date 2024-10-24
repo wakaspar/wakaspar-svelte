@@ -1,5 +1,5 @@
 <script>
-    import IconLink from '../../components/base/IconLink.svelte';
+    import IconLink from '../../../components/base/IconLink.svelte';
     import SKILLS from '$lib/skills.js';
 
     let skills = SKILLS;
@@ -7,6 +7,7 @@
 
 <div>
     <h2>Tech</h2>
+    <p>Click on a skill to see its documentation.</p>
     <div class='grid'>
         {#each skills as skill}
             <IconLink skill={skill} />
