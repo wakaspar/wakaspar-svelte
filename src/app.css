@@ -15,6 +15,14 @@ h2 {
   text-decoration: underline;
 }
 
+.about-link {
+  color: #000
+}
+
+.about-link:hover {
+  color: #fff
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
