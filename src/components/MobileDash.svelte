@@ -1,6 +1,6 @@
 <script>
     import Box from './base/Box.svelte';
-    import ExpContent from './content/ExpContent.svelte';
+    import ResumeContent from './content/ResumeContent.svelte';
     import InfoContent from './content/InfoContent.svelte';
     import PicsContent from './content/PicsContent.svelte';
     import SkillsContent from './content/SkillsContent.svelte';
@@ -15,7 +15,7 @@
         <InfoContent />
     </Box>
     <Box name='resume'>
-        <ExpContent />
+        <ResumeContent />
     </Box>
     <Box name='social'>
         <SocialContent />

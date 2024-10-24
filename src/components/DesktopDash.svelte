@@ -1,6 +1,6 @@
 <script>
     import DragBox from './base/DragBox.svelte'
-    import ExpContent from './content/ExpContent.svelte'
+    import ResumeContent from './content/ResumeContent.svelte'
     import InfoContent from './content/InfoContent.svelte'
     import PicsContent from './content/PicsContent.svelte'
     import SkillsContent from './content/SkillsContent.svelte'
@@ -28,7 +28,7 @@
         <InfoContent />
     </DragBox>
     <DragBox onClick={bringToFront} name='resume' positionX=10 positionY=270>
-        <ExpContent />
+        <ResumeContent />
     </DragBox>
     <DragBox onClick={bringToFront} name='social' positionX=260 positionY=270>
         <SocialContent />
