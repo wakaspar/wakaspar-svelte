@@ -5,7 +5,7 @@
 </script>
 
 <div class='wrapper'>
-    <p>A quick list of my skills:</p>
+    <p>Click to see docs:</p>
     <div class='grid'>
         {#each skills as skill}
             <i title={skill.name} class='devicon-{skill.icon}-plain colored' />        {/each}

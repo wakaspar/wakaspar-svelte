@@ -1,21 +1,21 @@
 <script>
     import Box from './base/Box.svelte';
     import ResumeContent from './content/ResumeContent.svelte';
-    import InfoContent from './content/InfoContent.svelte';
+    import AboutContent from './content/AboutContent.svelte';
     import PicsContent from './content/PicsContent.svelte';
-    import SkillsContent from './content/SkillsContent.svelte';
+    import TechContent from './content/TechContent.svelte';
     import SocialContent from './content/SocialContent.svelte';
 </script>
 
 <div class='mobile-dash'>
-    <Box name='tech'>
-        <SkillsContent />
-    </Box>
     <Box name='about'>
-        <InfoContent />
+        <AboutContent />
     </Box>
     <Box name='resumé'>
         <ResumeContent />
+    </Box>
+    <Box name='tech'>
+        <TechContent />
     </Box>
     <Box name='social'>
         <SocialContent />

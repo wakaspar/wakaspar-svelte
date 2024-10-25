@@ -1,9 +1,9 @@
 <script>
     import DragBox from './base/DragBox.svelte'
     import ResumeContent from './content/ResumeContent.svelte'
-    import InfoContent from './content/InfoContent.svelte'
+    import AboutContent from './content/AboutContent.svelte'
     import PicsContent from './content/PicsContent.svelte'
-    import SkillsContent from './content/SkillsContent.svelte'
+    import TechContent from './content/TechContent.svelte'
     import SocialContent from './content/SocialContent.svelte'
 
     function bringToFront() {
@@ -22,10 +22,10 @@
 <div class='mobile-dash'>
     <!-- TODO: Randomize positions! <-- set top and left, will have to do each directly. -->
     <DragBox onClick={bringToFront} name='Tech' positionX=260 positionY=70>
-        <SkillsContent />
+        <TechContent />
     </DragBox>
     <DragBox onClick={bringToFront} name='About' positionX=10 positionY=70>
-        <InfoContent />
+        <AboutContent />
     </DragBox>
     <DragBox onClick={bringToFront} name='Resumé' positionX=10 positionY=270>
         <ResumeContent />
