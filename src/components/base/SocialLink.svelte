@@ -45,6 +45,19 @@
         color: #fff;
     }
 
+    .soc-link:active {
+        background: #fff;
+        box-shadow: inset 0px 0px 0px 1px #000;
+    }
+
+    .soc-link:active i {
+        color: #000;
+    }
+
+    .soc-link:active i p {
+        color: #000;
+    }
+
     .bi-github {
         color: #181616;
     }

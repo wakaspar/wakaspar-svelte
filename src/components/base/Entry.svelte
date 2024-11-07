@@ -42,6 +42,10 @@
         color: #fff;
     }
 
+    .entry .tech i:active {
+        color: #000;
+    }
+
     .entry .tech i::after {
         content: ' ';
     }

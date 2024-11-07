@@ -39,6 +39,19 @@
     .icon-link:hover i p {
         color: #fff;
     }
+
+    .icon-link:active {
+        background-color: #fff;
+        box-shadow: inset 0px 0px 0px 1px #000;
+    }
+
+    .icon-link:active i {
+        color: #000;
+    }
+
+    .icon-link:active i p {
+        color: #000;
+    }
     
     .icon-link i {
         font-size: 3rem;
