@@ -1,22 +1,16 @@
 <script>
     import Entry from '../../../components/base/Entry.svelte'
     import ENTRIES from '$lib/ENTRIES.js';
-
-    let entries = ENTRIES;
-
-    function downloadResume() {
-        // TODO: download resume file instead.
-        console.log('hello world');
-    }
+    import RESUME from '$lib/Adam Kaspar Resume 2025.pdf';
 </script>
 
 <div>
     <h2>Resumé</h2>
     <p>
         To download a detailed, up-to-date resumé, 
-        <button class='dl-btn' on:click={downloadResume}>click here</button>
+        <a class='dl-btn' href={RESUME} download>click here</a>.
     </p>
-    {#each entries as entry}
+    {#each ENTRIES as entry}
         <Entry entry={entry} />
     {/each}
 </div>
@@ -25,8 +19,11 @@
     .dl-btn {
         background: none;
         border: 1px solid #000;
-        font-family: monospace;
+        color: #000;
         cursor: pointer;
+        font-family: monospace;
+        text-decoration: none;
+        padding: 1px 3px;
     }
 
     .dl-btn:hover {

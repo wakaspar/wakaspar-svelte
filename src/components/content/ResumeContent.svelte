@@ -9,7 +9,6 @@
         <div class='entry'>
             <tr>{entry.name}</tr>
             <tr>{entry.position}</tr>
-            <tr>{entry.dates}</tr>
     
             {#if entry.tech}
                 <tr class='tech'>
@@ -41,5 +40,7 @@
 
     .resume .entry .tech {
         text-align: justify;
+        display: flex;
+        padding: .25rem 0;
     }
 </style>
