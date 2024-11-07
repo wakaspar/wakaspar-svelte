@@ -14,7 +14,7 @@
     
     </div>
     
-    <a class='about-link' href='/tech'>Learn more =></a>
+    <a class='about-link' href='/social'>Learn more =></a>
 </div>
 
 <style>
